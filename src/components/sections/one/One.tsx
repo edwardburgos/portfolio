@@ -6,7 +6,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import profilePhoto from '../../../assets/profilePhoto.jpg';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
-import FileSaver from 'file-saver';
 
 
 export default function SearchBar() {
@@ -27,13 +26,30 @@ export default function SearchBar() {
         </div>
         <div className={s.description}>
           <div className={s.info}>
-            <p className={s.title}>Hi, I am Edward Burgos</p>
-            <p className={s.subtitle}>Fullstack Developer</p>
-            <p className={s.paragraph}>Experience in backend, frontend and mobile development</p>
+            <p className={s.title}>Hi, I am Edward Burgos.</p>
+            <p className={s.paragraph}>Full Stack Developer based in Peru.</p>
+            <p className={s.paragraph}>Experience in frontend, backend and
+              mobile development.</p>
+            <p className={s.paragraph}>Passionate about developing functional
+              products that provide value without
+              neglecting the clean, understandable and
+              optimized code.</p>
+            <p className={s.paragraph}>Adaptable to work under pressure and
+              adjustable to delivery times through
+              discipline and organization in order to help
+              the progress of the projects.</p>
+            <p className={s.paragraph}>Teamwork fan because it helps me to
+              analyze different points of view for the
+              same situation and grow as a person by
+              interacting with the different members of
+              it.</p>
+            <p className={s.paragraph}>Wishing to be part of a company that allow
+              me to improve my skills and expand my
+              knowledge.</p>
           </div>
           {
             !!new Blob() ?
-              <Button variant="outlined" className={s.download} onClick={() => FileSaver.saveAs("https://edwardburgos.vercel.app/static/media/EDWARD_BURGOS_RESUME.pdf", "EDWARD_BURGOS_RESUME.pdf")}>
+              <Button variant="outlined" className={s.download} href='EDWARD_BURGOS_RESUME.pdf' download>
                 Download CV
               </Button>
               :

@@ -1,6 +1,7 @@
 .container {
-    height: calc(100vh - 62px);
+    min-height: calc(100vh - 62px);
     padding-top: 62px;
+    padding-bottom: 16px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -29,6 +30,8 @@
 
 .profile {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .profilePhoto {
@@ -56,9 +59,9 @@
 }
 
 .title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    margin: 0 0 8px 0;
+    margin: 0 0 16px 0;
 }
 
 .subtitle {
@@ -68,8 +71,11 @@
 }
 
 .paragraph {
-    font-size: 14px;
-    margin: 0;
+    margin: 0 0 8px 0 !important;
+}
+
+.lastParagraph {
+    margin: 0 !important;
 }
 
 .link {
@@ -82,7 +88,6 @@
 
 .download {
     text-transform: none !important;
-    font-weight: 600 !important;
 }
 
 @media screen and (min-width: 576px) {
