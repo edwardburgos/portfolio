@@ -6,6 +6,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import profilePhoto from '../../../assets/profilePhoto.jpg';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import FileSaver from 'file-saver';
+
 
 export default function SearchBar() {
   return (
@@ -29,9 +31,15 @@ export default function SearchBar() {
             <p className={s.subtitle}>Fullstack Developer</p>
             <p className={s.paragraph}>Experience in backend, frontend and mobile development</p>
           </div>
-          <Button variant="outlined" className={s.download}>
-            Download CV
-          </Button>
+          {
+            !!new Blob() ?
+              <Button variant="outlined" className={s.download} onClick={() => FileSaver.saveAs("https://edwardburgos.vercel.app/static/media/EDWARD_BURGOS_RESUME.pdf", "EDWARD_BURGOS_RESUME.pdf")}>
+                Download CV
+              </Button>
+              :
+              null
+          }
+
         </div>
       </div>
     </div>
