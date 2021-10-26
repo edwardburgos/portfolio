@@ -20,7 +20,7 @@ export default function SearchBar() {
             </div>
           </div>
           <div className={s.profile}>
-            <img src={profilePhoto} className={s.profilePhoto}></img>
+            <img src={profilePhoto} className={s.profilePhoto} alt="Edward Burgos"></img>
           </div>
         </div>
         <div className={s.description}>
