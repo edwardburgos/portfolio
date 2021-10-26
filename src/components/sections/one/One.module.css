@@ -1,0 +1,103 @@
+.container {
+    height: calc(100vh - 62px);
+    padding-top: 62px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.icons {
+    width: 24px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile {
+    flex: 1;
+}
+
+.profilePhoto {
+    width: 214px;
+    border-radius: 20px;
+}
+
+.iconContainer, .lastIconContainer {
+    text-align: left;
+    margin-bottom: 16px !important;
+}
+
+.iconButton {
+    color: black !important;
+    padding: 0 !important;
+}
+
+.lastIconContainer {
+    margin-bottom: 0 !important;
+}
+
+.description {
+    width: 100%;
+    text-align: left;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.paragraph {
+    font-size: 14px;
+    margin: 0;
+}
+
+.link {
+    color: black;
+}
+
+.info {
+    margin-bottom: 16px;
+}
+
+.download {
+    text-transform: none !important;
+    font-weight: 600 !important;
+}
+
+@media screen and (min-width: 576px) {
+    .media {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .description {
+        width: 50%;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    .content {
+        align-items: center;
+    }
+}
+
+

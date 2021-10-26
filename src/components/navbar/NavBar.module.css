@@ -1,0 +1,57 @@
+.buttonMenu {
+    width: 36px;
+    padding: 0 16px 0 0 !important;
+}
+
+.buttonMore {
+    padding: 0 0 0 16px !important;
+    width: 36px;
+}
+
+.toolBar {
+    padding: 8px 5% !important;
+    min-height: 30px !important;
+}
+
+.title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.searchInput {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 48px !important;
+    color: white !important;
+    width: 100%;
+}
+
+.searchInput input {
+    padding: 0 !important;
+}
+
+.searchIcon {
+    font-size: 14px !important;
+}
+
+.searchIconContainer{
+   /* // padding: theme.spacing(0, 2), */
+    height: 100%;
+    position: absolute;
+    /* //pointerEvents: 'none', */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+   /* .const SearchIconWrapper = styled('div')(({ theme }) => ({
+    // padding: theme.spacing(0, 2),
+     height: '100%',
+     position: 'absolute',
+     pointerEvents: 'none',
+     display: 'flex',
+     alignItems: 'center',
+     justifyContent: 'center',
+   })); */
