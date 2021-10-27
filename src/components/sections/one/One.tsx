@@ -8,7 +8,7 @@ import profilePhoto from '../../../assets/profilePhoto.jpg';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 
 
-export default function SearchBar() {
+export default function One() {
   return (
     <div className={s.container}>
       <div className={s.content}>
@@ -26,7 +26,7 @@ export default function SearchBar() {
         </div>
         <div className={s.description}>
           <div className={s.info}>
-            <p className={s.title}>Hi, I am Edward Burgos.</p>
+            <h1>Hi, I am Edward Burgos.</h1>
             <p className={s.paragraph}>Full Stack Developer based in Peru.</p>
             <p className={s.paragraph}>Experience in frontend, backend and
               mobile development.</p>
