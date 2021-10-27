@@ -27,6 +27,7 @@ export default function NavBar() {
               aria-label="show more"
               color="inherit"
               className={s.buttonMore}
+              onClick={() => document.body.classList.toggle("dark-mode")}
             >
               <NightsStayIcon fontSize="small" />
             </IconButton>

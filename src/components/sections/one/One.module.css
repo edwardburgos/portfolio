@@ -1,5 +1,5 @@
 .container {
-    min-height: calc(100vh - 62px);
+    min-height: calc(100vh - 78px);
     padding-top: 62px;
     padding-bottom: 16px;
     width: 100%;
@@ -45,7 +45,7 @@
 }
 
 .iconButton {
-    color: black !important;
+    color: inherit !important;
     padding: 0 !important;
 }
 
@@ -77,11 +77,6 @@
 .lastParagraph {
     margin: 0 !important;
 }
-
-.link {
-    color: black;
-}
-
 .info {
     margin-bottom: 16px;
 }
