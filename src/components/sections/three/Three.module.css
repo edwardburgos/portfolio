@@ -1,0 +1,38 @@
+.container {
+    min-height: calc(100vh - 78px);
+    padding-top: 62px;
+    padding-bottom: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 36px;
+    width: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.idatLogo {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+}
+
+.dot {
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+}

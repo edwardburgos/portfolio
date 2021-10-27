@@ -18,3 +18,15 @@ code {
   background-color: black;
   color: white !important;
 }
+
+.block {
+  display: block;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.eighteenpx {
+  font-size: 18px;
+}
