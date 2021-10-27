@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,11 +14,31 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ListItemText from '@mui/material/ListItemText';
 import FolderOutlinedIcon from '@mui/icons-material/FolderOutlined';
 import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 
 export default function NavBar() {
 
   const [showDrawer, setShowDrawer] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
 
+  function darkApp() {
+    if (localStorage.getItem('dark') === 'true') {
+      if (!document.body.classList.contains('dark-mode')) {
+        document.body.classList.add('dark-mode')
+        if (!darkMode) setDarkMode(true)
+      }
+    } else {
+      if (document.body.classList.contains('dark-mode')) {
+        document.body.classList.remove('dark-mode')
+        if (!darkMode) setDarkMode(false)
+      }
+    }
+  }
+
+  useEffect(() => {
+    darkApp()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [darkMode])
 
   const toggleDrawer =
     (open: boolean) =>
@@ -51,9 +71,9 @@ export default function NavBar() {
                 aria-label="show more"
                 color="inherit"
                 className={s.buttonMore}
-                onClick={() => document.body.classList.toggle("dark-mode")}
+                onClick={() => { localStorage.setItem('dark', `${!darkMode}`); setDarkMode(!darkMode); }}
               >
-                <NightsStayIcon fontSize="small" />
+                { !darkMode ? <NightsStayIcon fontSize="small" /> : <LightModeOutlinedIcon fontSize="small" /> }
               </IconButton>
             </Box>
           </Toolbar>
@@ -75,7 +95,7 @@ export default function NavBar() {
             {['Home', 'Skills', 'Portfolio'].map(text => (
               <ListItem button key={text}>
                 <ListItemIcon>
-                  { text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : <FolderOutlinedIcon /> }
+                  {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : <FolderOutlinedIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
