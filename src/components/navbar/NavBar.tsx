@@ -86,7 +86,7 @@ export default function NavBar() {
         onClose={toggleDrawer(false)}
       >
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: 250, color: !darkMode ? 'black' : 'white', backgroundColor: darkMode ? 'black' : 'white', height: '100%'}}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
@@ -94,7 +94,7 @@ export default function NavBar() {
           <List>
             {['Home', 'Skills', 'Portfolio'].map(text => (
               <ListItem button key={text}>
-                <ListItemIcon>
+                <ListItemIcon sx={{ color: !darkMode ? 'black' : 'white'}}>
                   {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : <FolderOutlinedIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
