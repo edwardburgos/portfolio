@@ -47,15 +47,9 @@ export default function One() {
               me to improve my skills and expand my
               knowledge.</p>
           </div>
-          {
-            !!new Blob() ?
-              <Button variant="outlined" className={s.download} href='EDWARD_BURGOS_RESUME.pdf' download>
-                Download CV
-              </Button>
-              :
-              null
-          }
-
+          <Button variant="outlined" className={s.download} href='EDWARD_BURGOS_RESUME.pdf' download>
+            Download CV
+          </Button>
         </div>
       </div>
     </div>
