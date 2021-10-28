@@ -15,9 +15,17 @@ import ListItemText from '@mui/material/ListItemText';
 import FolderOutlinedIcon from '@mui/icons-material/FolderOutlined';
 import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import SchoolIcon from '@mui/icons-material/SchoolOutlined';
+import { useDispatch } from 'react-redux';
+import { modifyApp } from '../../actions';
+import {
+  HashLink as Link
+} from "react-router-hash-link";
 
 export default function NavBar() {
 
+  const dispatch = useDispatch();
+  
   const [showDrawer, setShowDrawer] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
 
@@ -64,7 +72,7 @@ export default function NavBar() {
             >
               <MenuIcon fontSize="small" />
             </IconButton>
-            <p className={s.title}>Edward Burgos</p>
+            <Link to='#home' className={s.title}>Edward Burgos</Link>
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ display: { xs: 'flex' } }}>
               <IconButton
@@ -92,12 +100,14 @@ export default function NavBar() {
           onKeyDown={toggleDrawer(false)}
         >
           <List>
-            {['Home', 'Skills', 'Portfolio'].map(text => (
-              <ListItem button key={text}>
+            {['Home', 'Skills', 'Education', 'Portfolio'].map((text, index) => (
+              <ListItem button key={index}>
+                <Link to={text === 'Portfolio' ? `#dogsapp` : `#${text.toLowerCase()}`} className={s.noDecoration} onClick={() => { if (text === 'Portfolio') dispatch(modifyApp('dogsapp')) }}>
                 <ListItemIcon sx={{ color: !darkMode ? 'black' : 'white'}}>
-                  {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : <FolderOutlinedIcon />}
+                  {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : text === 'Education' ? <SchoolIcon /> : <FolderOutlinedIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
+                </Link>
               </ListItem>
             ))}
           </List>

@@ -34,14 +34,14 @@ export default function Two() {
     'Creative Thinking', 'Communicative', 'Leadership', 'Proactive', 'Responsible']
 
     return (
-        <div className={s.container}>
+        <div className={s.container} id="skills">
             <div className={s.content}>
                 <h1 className={s.title}>Skills</h1>
                 <h3 className={s.firstSubtitle}>Promming Languages</h3>
                 <div className={s.skillsContainer}>
                     {
-                        programmingLanguages.map(e =>
-                            <div className={s.skill}>
+                        programmingLanguages.map((e, index) =>
+                            <div className={s.skill} key={index}>
                                 <img src={e.logo} className={s.logo} alt={e.name} />
                                 <span>{e.name}</span>
                             </div>
@@ -51,8 +51,8 @@ export default function Two() {
                 <h3 className={s.subtitle}>Backend Stack</h3>
                 <div className={s.skillsContainer}>
                     {
-                        backendstack.map(e =>
-                            <div className={s.skill}>
+                        backendstack.map((e, index) =>
+                            <div className={s.skill} key={index}>
                                 <img src={e.logo} className={s.logo} alt={e.name} />
                                 <span>{e.name}</span>
                             </div>
@@ -62,8 +62,8 @@ export default function Two() {
                 <h3 className={s.subtitle}>Frontend Stack</h3>
                 <div className={s.skillsContainer}>
                     {
-                        frontendstack.map(e =>
-                            <div className={s.skill}>
+                        frontendstack.map((e, index) =>
+                            <div className={s.skill} key={index}>
                                 <img src={e.logo} className={s.logo} alt={e.name} />
                                 <span>{e.name}</span>
                             </div>
@@ -73,8 +73,8 @@ export default function Two() {
                 <h3 className={s.subtitle}>Mobile Stack</h3>
                 <div className={s.skillsContainer}>
                     {
-                        mobilestack.map(e =>
-                            <div className={s.skill}>
+                        mobilestack.map((e, index) =>
+                            <div className={s.skill} key={index}>
                                 <img src={e.logo} className={s.logo} alt={e.name} />
                                 <span>{e.name}</span>
                             </div>
@@ -84,8 +84,8 @@ export default function Two() {
                 <h3 className={s.subtitle}>Cloud Stack</h3>
                 <div className={s.skillsContainer}>
                     {
-                        cloudstack.map(e =>
-                            <div className={s.skill}>
+                        cloudstack.map((e, index) =>
+                            <div className={s.skill} key={index}>
                                 <img src={e.logo} className={s.logo} alt={e.name} />
                                 <span>{e.name}</span>
                             </div>
@@ -95,8 +95,8 @@ export default function Two() {
                 <h3 className={s.subtitle}>Soft Skills</h3>
                 <div className={s.skillsContainer}>
                     {
-                        softskills.map(e =>
-                            <div className={s.skill}>
+                        softskills.map((e, index) =>
+                            <div className={s.skill} key={index}>
                                 <span>{e}</span>
                             </div>
                         )

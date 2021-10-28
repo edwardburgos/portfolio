@@ -18,7 +18,7 @@ import icpnaLogo from '../../../assets/icpnaLogo.png'
 
 export default function Three() {
     return (
-        <div className={s.container}>
+        <div className={s.container} id='education'>
             <div className={s.content}>
                 <h1 className={s.title}>Education</h1>
                 <Timeline>

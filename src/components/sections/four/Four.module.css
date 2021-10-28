@@ -71,6 +71,15 @@
     margin: 8px 16px 0 0 !important;
 }
 
+.noDecoration {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.toggleButtonBorder {
+    border: 1px solid rgba(25, 118, 210, 0.5) !important;
+}
+
 @media screen and (min-width: 557px) {
     .appDescription {
         min-height: calc(100vh - 190px);

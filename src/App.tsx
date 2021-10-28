@@ -5,19 +5,28 @@ import One from './components/sections/one/One'
 import Two from './components/sections/two/Two'
 import Three from './components/sections/three/Three'
 import Four from './components/sections/four/Four'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <div className={s.container}>
-      <One />
-      <Two />
-      <Three />
-      <Four />
+    <Router>
+      <div className="App">
+        <NavBar></NavBar>
+        <div className={s.container}>
+          <One />
+          <Two />
+          <Three />
+          <Four />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
 export default App;
+

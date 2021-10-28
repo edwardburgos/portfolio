@@ -16,6 +16,8 @@
 .title {
     margin: 0;
     font-weight: 600;
+    text-decoration: none;
+    color: inherit;
 }
 
 .searchInput {
@@ -48,3 +50,10 @@
     color: red !important;
 }
 
+.noDecoration {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

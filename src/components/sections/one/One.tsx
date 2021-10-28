@@ -10,7 +10,7 @@ import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 
 export default function One() {
   return (
-    <div className={s.container}>
+    <div className={s.container} id='home'>
       <div className={s.content}>
         <div className={s.media}>
           <div className={s.icons}>
