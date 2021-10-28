@@ -1,0 +1,78 @@
+.container {
+    min-height: calc(100vh - 78px);
+    padding-top: 62px;
+    padding-bottom: 16px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toggle {
+    text-transform: lowercase !important;
+    color: red !important
+}
+
+.title {
+    width: 100%;
+    margin: 0 0 16px 0;
+}
+
+.appDescription {
+    width: 100%;
+    min-height: calc(100vh - 232px);
+}
+
+.onlyBottom {
+    margin: 0 0 16px 0;
+}
+
+.smallBottom {
+    margin: 0 0 8px 0;
+}
+
+.onlyTop {
+    margin: 16px 0 0 0;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+.skill {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 8px 8px 0 0;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.button {
+    text-transform: none !important;
+    margin: 8px 16px 0 0 !important;
+}
+
+@media screen and (min-width: 557px) {
+    .appDescription {
+        min-height: calc(100vh - 190px);
+    }
+}
