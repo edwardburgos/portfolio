@@ -26,13 +26,12 @@ export default function One() {
         <div className={s.description}>
           <div className={s.info}>
             <h1>Hi, I am Edward Burgos.</h1>
-            <p className={s.paragraph}>Full Stack Developer based in Peru.</p>
+            <p className={s.firstParagraph}>Full Stack Developer based in Peru.</p>
             <p className={s.paragraph}>Experience in frontend, backend and
               mobile development.</p>
-            <p className={s.paragraph}>Passionate about developing functional
-              products that provide value without
-              neglecting the clean, understandable and
-              optimized code.</p>
+            <p className={s.paragraph}>Passionate about developing functional 
+            products paying attention to details and without neglecting the clean, 
+            understandable and optimized code.</p>
             <p className={s.paragraph}>Adaptable to work under pressure and
               adjustable to delivery times through
               discipline and organization in order to help
