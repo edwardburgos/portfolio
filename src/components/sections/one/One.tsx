@@ -44,7 +44,7 @@ export default function One() {
               knowledge.</p>
           </div>
           <Button variant="outlined" className={s.download} href='EDWARD_BURGOS_RESUME.pdf' download>
-            Download CV
+            Download resume
           </Button>
         </div>
       </div>

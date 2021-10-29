@@ -97,7 +97,7 @@ export default function Four() {
         portfolioapp: {
             name: 'Portfolio app',
             description: 'Web application that allows users to obtain professional information about me.',
-            features: ['Obtain professional information about me', 'CV download', 'Dark mode'],
+            features: ['Obtain professional information about me', 'Resume download', 'Dark mode'],
             deploymentLink: 'https://edwardburgos.vercel.app/',
             webDemonstration: 'https://youtu.be/BxgyFF2Ndfk',
             mobileDemonstration: 'https://youtu.be/ZC6Fzy-76Fk',
