@@ -18,7 +18,6 @@ import sequelizeLogo from '../../../assets/sequelizeLogo.png';
 import { appsType } from '../../../types'
 import { modifyApp } from '../../../actions';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from "react-router-dom";
 
 export default function Four() {
 
@@ -111,7 +110,7 @@ export default function Four() {
     }
 
     return (
-        <div className={s.container} id="dogsapp">
+        <div className={s.container} id="portfolio">
             <div className={s.content}>
                 <h1 className={s.title}>Portfolio</h1>
                 <ToggleButtonGroup
@@ -121,7 +120,7 @@ export default function Four() {
                     onChange={handleChange}
                     sx={{ display: 'flex', flexWrap: 'wrap', marginBottom: '8px' }}
                 >
-                    {availableApps.map((e, index) => <ToggleButton key={index} value={e.value} sx={{ textTransform: 'none', padding: '8px', marginBottom: '8px', color: 'inherit' }} className={s.toggleButtonBorder}><Link to={`#${e.value}`} className={s.noDecoration}>{e.name}</Link></ToggleButton>)}
+                    {availableApps.map((e, index) => <ToggleButton key={index} value={e.value} sx={{ textTransform: 'none', padding: '8px', marginBottom: '8px', color: 'inherit' }} className={s.toggleButtonBorder}>{e.name}</ToggleButton>)}
                 </ToggleButtonGroup>
                 <div className={s.appDescription}>
                     <h2 className={s.onlyBottom}>{portfolioApps[app].name}</h2>

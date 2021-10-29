@@ -100,7 +100,7 @@ export default function NavBar() {
           <List>
             {['Home', 'Skills', 'Education', 'Portfolio'].map((text, index) => (
               <ListItem button key={index}>
-                <Link to={text === 'Portfolio' ? `#dogsapp` : `#${text.toLowerCase()}`} className={s.noDecoration} onClick={() => { if (text === 'Portfolio') dispatch(modifyApp('dogsapp')) }}>
+                <Link to={`#${text.toLowerCase()}`} className={s.noDecoration} onClick={() => { if (text === 'Portfolio') dispatch(modifyApp('dogsapp')) }}>
                   <ListItemIcon sx={{ color: !darkMode ? 'black' : 'white' }}>
                     {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : text === 'Education' ? <SchoolIcon /> : <FolderOutlinedIcon />}
                   </ListItemIcon>
