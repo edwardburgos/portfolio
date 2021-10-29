@@ -105,6 +105,9 @@ export default function Three() {
                                 <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px' }} href='EDWARD_BURGOS_ICPNA_CERTIFICATES.pdf' download>
                                     Download certificate
                                 </Button>
+                                <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px' }} href='https://www.efset.org/cert/Bu3X7f'>
+                                    EF SET 2021 Certificate
+                                </Button>
                             </div>
                         </TimelineContent>
                     </TimelineItem>
