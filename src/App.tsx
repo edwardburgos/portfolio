@@ -5,18 +5,13 @@ import One from './components/sections/one/One'
 import Two from './components/sections/two/Two'
 import Three from './components/sections/three/Three'
 import Four from './components/sections/four/Four'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <NavBar></NavBar>
+      <div>
+        <NavBar />
         <div className={s.container}>
           <One />
           <Two />

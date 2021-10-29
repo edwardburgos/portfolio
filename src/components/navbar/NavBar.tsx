@@ -18,14 +18,12 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import SchoolIcon from '@mui/icons-material/SchoolOutlined';
 import { useDispatch } from 'react-redux';
 import { modifyApp } from '../../actions';
-import {
-  HashLink as Link
-} from "react-router-hash-link";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function NavBar() {
 
   const dispatch = useDispatch();
-  
+
   const [showDrawer, setShowDrawer] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
 
@@ -81,7 +79,7 @@ export default function NavBar() {
                 className={s.buttonMore}
                 onClick={() => { localStorage.setItem('dark', `${!darkMode}`); setDarkMode(!darkMode); }}
               >
-                { !darkMode ? <NightsStayIcon fontSize="small" /> : <LightModeOutlinedIcon fontSize="small" /> }
+                {!darkMode ? <NightsStayIcon fontSize="small" /> : <LightModeOutlinedIcon fontSize="small" />}
               </IconButton>
             </Box>
           </Toolbar>
@@ -94,7 +92,7 @@ export default function NavBar() {
         onClose={toggleDrawer(false)}
       >
         <Box
-          sx={{ width: 250, color: !darkMode ? 'black' : 'white', backgroundColor: darkMode ? 'black' : 'white', height: '100%'}}
+          sx={{ width: 250, color: !darkMode ? 'black' : 'white', backgroundColor: darkMode ? 'black' : 'white', height: '100%' }}
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
@@ -103,10 +101,10 @@ export default function NavBar() {
             {['Home', 'Skills', 'Education', 'Portfolio'].map((text, index) => (
               <ListItem button key={index}>
                 <Link to={text === 'Portfolio' ? `#dogsapp` : `#${text.toLowerCase()}`} className={s.noDecoration} onClick={() => { if (text === 'Portfolio') dispatch(modifyApp('dogsapp')) }}>
-                <ListItemIcon sx={{ color: !darkMode ? 'black' : 'white'}}>
-                  {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : text === 'Education' ? <SchoolIcon /> : <FolderOutlinedIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
+                  <ListItemIcon sx={{ color: !darkMode ? 'black' : 'white' }}>
+                    {text === 'Home' ? <HomeOutlinedIcon /> : text === 'Skills' ? <LightbulbOutlinedIcon /> : text === 'Education' ? <SchoolIcon /> : <FolderOutlinedIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
                 </Link>
               </ListItem>
             ))}

@@ -7,7 +7,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import profilePhoto from '../../../assets/profilePhoto.jpg';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 
-
 export default function One() {
   return (
     <div className={s.container} id='home'>

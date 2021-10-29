@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -6,11 +6,6 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import Typography from '@mui/material/Typography';
 import s from './Three.module.css'
 import henryLogo from '../../../assets/henryLogo.png'
 import idatLogo from '../../../assets/idatLogo.png'
@@ -36,7 +31,7 @@ export default function Three() {
                         <TimelineSeparator>
                             <TimelineConnector />
                             <TimelineDot className={s.dot}>
-                                <img src={henryLogo} className={s.logo} />
+                                <img src={henryLogo} className={s.logo} alt="HENRY" />
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
@@ -62,7 +57,7 @@ export default function Three() {
                         <TimelineSeparator>
                             <TimelineConnector />
                             <TimelineDot sx={{ backgroundColor: 'white' }}>
-                                <img src={idatLogo} className={s.idatLogo} />
+                                <img src={idatLogo} className={s.idatLogo} alt="IDAT" />
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>
@@ -90,7 +85,7 @@ export default function Three() {
                         <TimelineSeparator>
                             <TimelineConnector />
                             <TimelineDot sx={{ backgroundColor: 'white' }}>
-                                <img src={icpnaLogo} className={s.idatLogo} />
+                                <img src={icpnaLogo} className={s.idatLogo} alt="ICPNA" />
                             </TimelineDot>
                             <TimelineConnector />
                         </TimelineSeparator>

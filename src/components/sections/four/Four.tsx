@@ -1,24 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import Typography from '@mui/material/Typography';
+import React from 'react';
 import Button from '@mui/material/Button'
 import s from './Four.module.css'
-import henryLogo from '../../../assets/henryLogo.png'
-import idatLogo from '../../../assets/idatLogo.png'
-import icpnaLogo from '../../../assets/icpnaLogo.png'
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { transform } from 'typescript';
 import typescriptLogo from '../../../assets/typescriptLogo.png';
 import cssLogo from '../../../assets/cssLogo.png';
 import expressLogo from '../../../assets/expressLogo.png';
@@ -34,26 +18,17 @@ import sequelizeLogo from '../../../assets/sequelizeLogo.png';
 import { appsType } from '../../../types'
 import { modifyApp } from '../../../actions';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Four() {
 
-    // const [app, setApp] = useState<string>('dogsapp');
-
     const dispatch = useDispatch();
-    const app = useSelector((state: { app:  "dogsapp" | "weatherapp" | "moviesapp" | "mobiledogsapp" | "portfolioapp" }) => state.app)
-    
-    // console.log(match)
-    // if (match.url.slice(11).length && ["dogsapp", "weatherapp", "moviesapp", "mobiledogsapp", "portfolioapp"].includes(match.url.slice(11))) {
-    //     setApp(match.url.slice(11))
-    //     console.log(match.url.slice(11))
-    // }
+
+    const app = useSelector((state: { app: "dogsapp" | "weatherapp" | "moviesapp" | "mobiledogsapp" | "portfolioapp" }) => state.app)
 
     const handleChange = (
         event: React.MouseEvent<HTMLElement>,
-        newAlignment:  "dogsapp" | "weatherapp" | "moviesapp" | "mobiledogsapp" | "portfolioapp",
+        newAlignment: "dogsapp" | "weatherapp" | "moviesapp" | "mobiledogsapp" | "portfolioapp",
     ) => {
         dispatch(modifyApp(newAlignment));
 
@@ -71,8 +46,8 @@ export default function Four() {
                 'Password reset', 'Email communication with the users', 'User profile edition', 'Dog registration', 'Dog edition',
                 'Dog breeds search', 'Dog breeds filtering by temperament', 'Dog breeds detail', 'See other users', 'See and like other dogs'],
             deploymentLink: 'https://edwardburgosdogsapp.vercel.app',
-            webDemostration: 'https://open.spotify.com/',
-            mobileDemostration: 'https://open.spotify.com/',
+            webDemonstration: 'https://youtu.be/4xIJKCwR1c8',
+            mobileDemonstration: 'https://open.spotify.com/',
             backendSourceCode: 'https://github.com/edwardburgos/dogsappbackend',
             frontendSourceCode: 'https://github.com/edwardburgos/dogsappfrontend',
             backendstack: [{ name: 'Javascript', logo: javascriptLogo }, { name: 'Node.js', logo: nodeLogo },
@@ -87,8 +62,8 @@ export default function Four() {
             description: 'Web application thats allows users to watch the weather of the cities they search for or are located in and save them to check later.',
             features: ['Add city where the user is currently located', 'Search cities by name', 'Filter cities by country', 'Save cities to check later'],
             deploymentLink: 'https://edwardburgosweatherapp.vercel.app',
-            webDemostration: 'https://open.spotify.com/',
-            mobileDemostration: 'https://open.spotify.com/',
+            webDemonstration: 'https://youtu.be/ULR-JWNRzKU',
+            mobileDemonstration: 'https://youtu.be/JwqcjxI1ebg',
             backendSourceCode: 'https://github.com/edwardburgos/weatherappbackend',
             frontendSourceCode: 'https://github.com/edwardburgos/weatherappfrontend',
             backendstack: [{ name: 'Javascript', logo: javascriptLogo }, { name: 'Node.js', logo: nodeLogo },
@@ -105,8 +80,8 @@ export default function Four() {
                 'Find movies by gender', 'Find trending movies', 'Sort movies by popularity (Ascending / Descending)', 'Sort movies by release date (Ascending / Descending)',
                 'Sort movies by revenue (Ascending / Descending)', 'Sort movies by best rated (Ascending / Descending)', 'Sort movies by most rated (Ascending / Descending)'],
             deploymentLink: 'https://edwardburgosmoviesapp.vercel.app',
-            webDemostration: 'https://open.spotify.com/',
-            mobileDemostration: 'https://open.spotify.com/',
+            webDemonstration: 'https://youtu.be/v3yovxSneGU',
+            mobileDemonstration: 'https://open.spotify.com/',
             sourceCode: 'https://github.com/edwardburgos/moviesapp',
             stack: [{ name: 'Typescript', logo: typescriptLogo }, { name: 'React', logo: reactLogo },
             { name: 'Redux', logo: reduxLogo }, { name: 'HTML', logo: htmlLogo }, { name: 'CSS', logo: cssLogo }]
@@ -117,9 +92,9 @@ export default function Four() {
             features: ['Search dog breeds', 'Filter by temperaments'],
             expoDeployment: 'https://expo.dev/@edwardpbn/mobiledogsapp',
             downloadApk: 'https://expo.io/artifacts/7dbe3396-0e2b-4f12-888d-bd2d604593a1',
-            demostration: 'https://open.spotify.com/',
+            demonstration: 'https://youtu.be/x8SMFxhVip0',
             sourceCode: 'https://github.com/edwardburgos/mobiledogsapp',
-            stack: [{ name: 'Javascript', logo: javascriptLogo }, { name: 'React', logo: reactLogo },
+            stack: [{ name: 'Javascript', logo: javascriptLogo }, { name: 'React Native', logo: reactLogo },
             { name: 'Redux', logo: reduxLogo }]
         },
         portfolioapp: {
@@ -127,13 +102,12 @@ export default function Four() {
             description: 'Web application that allows users to obtain professional information about me.',
             features: ['Obtain professional information about me', 'Dark mode'],
             deploymentLink: 'https://edwardburgos.vercel.app/',
-            webDemostration: 'https://open.spotify.com/',
-            mobileDemostration: 'https://open.spotify.com/',
+            webDemonstration: 'https://open.spotify.com/',
+            mobileDemonstration: 'https://open.spotify.com/',
             sourceCode: 'https://github.com/edwardburgos/portfolio',
             stack: [{ name: 'Typescript', logo: typescriptLogo }, { name: 'React', logo: reactLogo },
             { name: 'Redux', logo: reduxLogo }, { name: 'HTML', logo: htmlLogo }, { name: 'CSS', logo: cssLogo }]
         },
-
     }
 
     return (
@@ -158,9 +132,9 @@ export default function Four() {
                         {portfolioApps[app].deploymentLink ? <Button variant="outlined" className={s.button} href={portfolioApps[app].deploymentLink!} target='_blank'>Try it now</Button> : null}
                         {portfolioApps[app].expoDeployment ? <Button variant="outlined" className={s.button} href={portfolioApps[app].expoDeployment!} target='_blank'>Try on Expo</Button> : null}
                         {portfolioApps[app].downloadApk ? <Button variant="outlined" className={s.button} href={portfolioApps[app].downloadApk!} target='_blank'>Download APK</Button> : null}
-                        {portfolioApps[app].webDemostration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].webDemostration!} target='_blank'>Watch web demostration</Button> : null}
-                        {portfolioApps[app].mobileDemostration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].mobileDemostration!} target='_blank'>Watch mobile demostration</Button> : null}
-                        {portfolioApps[app].demostration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].demostration!} target='_blank'>Watch demostration</Button> : null}
+                        {portfolioApps[app].webDemonstration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].webDemonstration!} target='_blank'>Watch web demonstration</Button> : null}
+                        {portfolioApps[app].mobileDemonstration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].mobileDemonstration!} target='_blank'>Watch mobile demonstration</Button> : null}
+                        {portfolioApps[app].demonstration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].demonstration!} target='_blank'>Watch demonstration</Button> : null}
                         {portfolioApps[app].sourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].sourceCode!} target='_blank'>View source code</Button> : null}
                         {portfolioApps[app].backendSourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].backendSourceCode!} target='_blank'>View backend source code</Button> : null}
                         {portfolioApps[app].frontendSourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].frontendSourceCode!} target='_blank'>Watch frontend source code</Button> : null}
@@ -171,16 +145,16 @@ export default function Four() {
                     </ul>
                     <h3 className={s.noMargin}>Used tools</h3>
                     {portfolioApps[app].stack && portfolioApps[app].stack!.length ?
-                            <div className={s.skillsContainer}>
-                                {
-                                    portfolioApps[app].stack!.map((e, index) =>
-                                        <div className={s.skill} key={index}>
-                                            <img src={e.logo} className={s.logo} alt={e.name} />
-                                            <span>{e.name}</span>
-                                        </div>
-                                    )
-                                }
-                            </div> : null}
+                        <div className={s.skillsContainer}>
+                            {
+                                portfolioApps[app].stack!.map((e, index) =>
+                                    <div className={s.skill} key={index}>
+                                        <img src={e.logo} className={s.logo} alt={e.name} />
+                                        <span>{e.name}</span>
+                                    </div>
+                                )
+                            }
+                        </div> : null}
                     {portfolioApps[app].frontendstack && portfolioApps[app].frontendstack!.length ?
                         <>
                             <h4 className={s.onlyTop}>Frontend Stack</h4>
