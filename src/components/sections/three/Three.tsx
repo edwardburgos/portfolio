@@ -102,7 +102,7 @@ export default function Three() {
                                 <span className='block bold'>English Language Program</span>
                                 <span className='block'>Acquisition of knowledge about English that
                                     allows me to speak the language in a fluent way.</span>
-                                <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px', paddingRight: '16px' }} href='EDWARD_BURGOS_ICPNA_CERTIFICATES.pdf' download>
+                                <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px', marginRight: '16px' }} href='EDWARD_BURGOS_ICPNA_CERTIFICATES.pdf' download>
                                     Download certificate
                                 </Button>
                                 <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px' }} href='https://www.efset.org/cert/Bu3X7f'>
