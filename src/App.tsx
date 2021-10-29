@@ -14,9 +14,9 @@ function App() {
         <NavBar />
         <div className={s.container}>
           <One />
+          <Four />
           <Two />
           <Three />
-          <Four />
         </div>
       </div>
     </Router>

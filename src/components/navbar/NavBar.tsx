@@ -98,7 +98,7 @@ export default function NavBar() {
           onKeyDown={toggleDrawer(false)}
         >
           <List>
-            {['Home', 'Skills', 'Education', 'Portfolio'].map((text, index) => (
+            {['Home', 'Portfolio', 'Skills', 'Education'].map((text, index) => (
               <ListItem button key={index}>
                 <Link to={`#${text.toLowerCase()}`} className={s.noDecoration} onClick={() => { if (text === 'Portfolio') dispatch(modifyApp('dogsapp')) }}>
                   <ListItemIcon sx={{ color: !darkMode ? 'black' : 'white' }}>
