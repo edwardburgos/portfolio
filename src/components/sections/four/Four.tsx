@@ -137,7 +137,7 @@ export default function Four() {
                         {portfolioApps[app].demonstration ? <Button variant="outlined" className={s.button} href={portfolioApps[app].demonstration!} target='_blank'>Watch demonstration</Button> : null}
                         {portfolioApps[app].sourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].sourceCode!} target='_blank'>View source code</Button> : null}
                         {portfolioApps[app].backendSourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].backendSourceCode!} target='_blank'>View backend source code</Button> : null}
-                        {portfolioApps[app].frontendSourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].frontendSourceCode!} target='_blank'>Watch frontend source code</Button> : null}
+                        {portfolioApps[app].frontendSourceCode ? <Button variant="outlined" className={s.button} href={portfolioApps[app].frontendSourceCode!} target='_blank'>View frontend source code</Button> : null}
                     </div>
                     <h3 className={s.smallBottom}>Detailed features</h3>
                     <ul className={s.onlyBottom}>
