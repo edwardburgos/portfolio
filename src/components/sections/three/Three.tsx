@@ -71,7 +71,7 @@ export default function Three() {
                                 <span className='block bold'>Information Systems Development</span>
                                 <span className='block thin'>Acquisition of knowlegde about technological
                                     processes, data analysis and coding.</span>
-                                <Button variant="outlined" disabled sx={{ textTransform: 'none', marginTop: '8px' }} href='EDWARD_BURGOS_IDAT_CERTIFICATE.pdf' download>
+                                <Button variant="outlined" disabled sx={{ textTransform: 'none', marginTop: '8px' }} className={s.inProcess} href='EDWARD_BURGOS_IDAT_CERTIFICATE.pdf' download>
                                     Certificate in process
                                 </Button>
                             </div>

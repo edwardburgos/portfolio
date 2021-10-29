@@ -36,3 +36,8 @@
     margin: 0;
     width: 100%;
 }
+
+.inProcess {
+    color: gray;
+    border: 1px solid gray;
+}
