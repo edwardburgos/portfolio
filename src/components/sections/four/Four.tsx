@@ -99,8 +99,8 @@ export default function Four() {
             description: 'Web application that allows users to obtain professional information about me.',
             features: ['Obtain professional information about me', 'CV download', 'Dark mode'],
             deploymentLink: 'https://edwardburgos.vercel.app/',
-            webDemonstration: 'https://youtu.be/_H97m6iOzKY',
-            mobileDemonstration: 'https://youtu.be/XeL57zgXKrE',
+            webDemonstration: 'https://youtu.be/BxgyFF2Ndfk',
+            mobileDemonstration: 'https://youtu.be/ZC6Fzy-76Fk',
             sourceCode: 'https://github.com/edwardburgos/portfolio',
             stack: [{ name: 'Typescript', logo: typescriptLogo }, { name: 'React', logo: reactLogo },
             { name: 'Redux', logo: reduxLogo }, { name: 'HTML', logo: htmlLogo }, { name: 'CSS', logo: cssLogo }]
