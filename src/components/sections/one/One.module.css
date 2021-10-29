@@ -18,14 +18,16 @@
     display: flex;
     width: 100%;
     margin-bottom: 16px;
+    flex-wrap: wrap;
 }
 
 .icons {
-    width: 24px;
-    padding-right: 10px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 16px;
 }
 
 .profile {
@@ -35,23 +37,19 @@
 }
 
 .profilePhoto {
-    width: 214px;
-    height: 306px;
+    width: 252px;
+    height: 360px;
     border-radius: 20px;
 }
 
 .iconContainer, .lastIconContainer {
     text-align: left;
-    margin-bottom: 16px !important;
+    margin: 0 !important;
 }
 
 .iconButton {
     color: inherit !important;
     padding: 0 !important;
-}
-
-.lastIconContainer {
-    margin-bottom: 0 !important;
 }
 
 .description {
@@ -104,6 +102,14 @@
     }
     .content {
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .icons {
+        width: 35px;
+        margin-bottom: 0;
+        padding-right: 20px;
     }
 }
 

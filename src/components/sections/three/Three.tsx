@@ -10,6 +10,7 @@ import s from './Three.module.css'
 import henryLogo from '../../../assets/henryLogo.png'
 import idatLogo from '../../../assets/idatLogo.png'
 import icpnaLogo from '../../../assets/icpnaLogo.png'
+import { Button } from '@mui/material';
 
 export default function Three() {
     return (
@@ -38,8 +39,11 @@ export default function Three() {
                         <TimelineContent sx={{ paddingLeft: '12px', paddingRight: '0', py: 2, fontSize: '14px', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
                             <div>
                                 <span className='block bold eighteenpx'>HENRY</span>
-                                <span className='block bold'>Full Stack Development Bootcamp</span>
+                                <span className='block bold'>Full Stack Development</span>
                                 <span className='block thin'>Acquisition of coding skills.</span>
+                                <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px' }} href='EDWARD_BURGOS_HENRY_CERTIFICATE.pdf' download>
+                                    Download certificate
+                                </Button>
                             </div>
                         </TimelineContent>
                     </TimelineItem>
@@ -67,6 +71,9 @@ export default function Three() {
                                 <span className='block bold'>Information Systems Development</span>
                                 <span className='block thin'>Acquisition of knowlegde about technological
                                     processes, data analysis and coding.</span>
+                                <Button variant="outlined" disabled sx={{ textTransform: 'none', marginTop: '8px' }} href='EDWARD_BURGOS_IDAT_CERTIFICATE.pdf' download>
+                                    Certificate in process
+                                </Button>
                             </div>
                         </TimelineContent>
                     </TimelineItem>
@@ -92,9 +99,12 @@ export default function Three() {
                         <TimelineContent sx={{ paddingLeft: '12px', paddingRight: '0', py: 2, fontSize: '14px', display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>
                             <div>
                                 <span className='block bold eighteenpx'>ICPNA</span>
-                                <span className='block bold'>Advanced Program of English</span>
+                                <span className='block bold'>English Language Program</span>
                                 <span className='block'>Acquisition of knowledge about English that
                                     allows me to speak the language in a fluent way.</span>
+                                <Button variant="outlined" sx={{ textTransform: 'none', marginTop: '8px' }} href='EDWARD_BURGOS_ICPNA_CERTIFICATES.pdf' download>
+                                    Download certificate
+                                </Button>
                             </div>
                         </TimelineContent>
                     </TimelineItem>

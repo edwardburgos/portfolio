@@ -13,11 +13,9 @@ export default function One() {
       <div className={s.content}>
         <div className={s.media}>
           <div className={s.icons}>
-            <div>
-              <div className={s.iconContainer}><IconButton className={s.iconButton} href="mailto: edwardpbn@gmail.com" target='_blank' rel="noreferrer"><MailOutlinedIcon /></IconButton></div>
-              <div className={s.iconContainer}><IconButton className={s.iconButton} href='https://www.linkedin.com/in/edwardburgosdev/' target='_blank' rel="noreferrer"><LinkedInIcon /></IconButton></div>
-              <div className={s.lastIconContainer}><IconButton className={s.iconButton} href='https://github.com/edwardburgos' target='_blank' rel="noreferrer"><GitHubIcon /></IconButton></div>
-            </div>
+              <div className={s.iconContainer}><IconButton className={s.iconButton} href="mailto: edwardpbn@gmail.com" target='_blank' rel="noreferrer"><MailOutlinedIcon fontSize='large'/></IconButton></div>
+              <div className={s.iconContainer}><IconButton className={s.iconButton} href='https://www.linkedin.com/in/edwardburgosdev/' target='_blank' rel="noreferrer"><LinkedInIcon fontSize='large'/></IconButton></div>
+              <div className={s.lastIconContainer}><IconButton className={s.iconButton} href='https://github.com/edwardburgos' target='_blank' rel="noreferrer"><GitHubIcon fontSize='large'/></IconButton></div>
           </div>
           <div className={s.profile}>
             <img src={profilePhoto} className={s.profilePhoto} alt="Edward Burgos"></img>
