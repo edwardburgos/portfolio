@@ -22,8 +22,7 @@ export default function Two() {
     const frontendstack = [{ name: 'React', logo: reactLogo }, { name: 'Redux', logo: reduxLogo },
     { name: 'HTML', logo: htmlLogo }, { name: 'CSS', logo: cssLogo }]
     const mobilestack = [{ name: 'React Native', logo: reactLogo }]
-    const cloudstack = [{ name: 'Google Cloud', logo: googlecloudLogo },
-    { name: 'Firebase', logo: firebaseLogo }]
+    const cloudstack = [{ name: 'Firebase', logo: firebaseLogo }]
     const softskills = ['Problem Resolution', 'Discipline', 'Organization', 'Attention to details', 'Criterion',
         'Creative Thinking', 'Communicative', 'Leadership', 'Proactive', 'Responsible']
 

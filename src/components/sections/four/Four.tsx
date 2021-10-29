@@ -51,8 +51,7 @@ export default function Four() {
             frontendSourceCode: 'https://github.com/edwardburgos/dogsappfrontend',
             backendstack: [{ name: 'Javascript', logo: javascriptLogo }, { name: 'Node.js', logo: nodeLogo },
             { name: 'Express.js', logo: expressLogo }, { name: 'PostgreSQL', logo: postgresqlLogo },
-            { name: 'Sequelize', logo: sequelizeLogo }, { name: 'Google Cloud', logo: googlecloudLogo },
-            { name: 'Firebase', logo: firebaseLogo }],
+            { name: 'Sequelize', logo: sequelizeLogo }, { name: 'Firebase', logo: firebaseLogo }],
             frontendstack: [{ name: 'Javascript', logo: javascriptLogo }, { name: 'React', logo: reactLogo },
             { name: 'Redux', logo: reduxLogo }, { name: 'HTML', logo: htmlLogo }, { name: 'CSS', logo: cssLogo }]
         },
