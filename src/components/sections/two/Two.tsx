@@ -22,8 +22,8 @@ export default function Two() {
     { name: 'HTML', logo: htmlLogo }, { name: 'CSS', logo: cssLogo }]
     const mobilestack = [{ name: 'React Native', logo: reactLogo }]
     const cloudstack = [{ name: 'Firebase', logo: firebaseLogo }]
-    const softskills = ['Problem Resolution', 'Discipline', 'Organization', 'Attention to details', 'Criterion',
-        'Creative Thinking', 'Communicative', 'Leadership', 'Proactive', 'Responsible']
+    const softskills = ['Problem resolution', 'Discipline', 'Organization', 'Criterion', 'Attention to details',
+        'Creative thinking', 'Assertive communication', 'Responsability', 'Leadership', 'Proactivity']
 
     return (
         <div className={s.container} id="skills">
