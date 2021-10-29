@@ -7,7 +7,6 @@ import typescriptLogo from '../../../assets/typescriptLogo.png';
 import cssLogo from '../../../assets/cssLogo.png';
 import expressLogo from '../../../assets/expressLogo.png';
 import firebaseLogo from '../../../assets/firebaseLogo.png';
-import googlecloudLogo from '../../../assets/googlecloudLogo.png';
 import htmlLogo from '../../../assets/htmlLogo.png';
 import javascriptLogo from '../../../assets/javascriptLogo.png';
 import nodeLogo from '../../../assets/nodeLogo.png';
